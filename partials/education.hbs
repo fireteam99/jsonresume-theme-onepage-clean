@@ -20,13 +20,11 @@
 			</div>
 			{{#if courses.length}}
 			<div id='coursesBlock'>
-				{{#each courses}}
 				<ul class='coursesList'>
-					{{#each .}}
+					{{#each courses}}
 					<li class='course'>{{.}}</li>
 					{{/each}}
 				</ul>
-				{{/each}}
 			</div>
 			{{/if}}
 		</div>

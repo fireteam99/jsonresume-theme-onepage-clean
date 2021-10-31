@@ -60,7 +60,12 @@
       "endDate": "2020-12",
       "score": "3.74",
       "courses": [
-        "DB1101 - Basic SQL"
+        "Design & Analysis of Algorithms",
+        "Discrete Structures I & II",
+        "Computer Architecture",
+        "Brain-Insp Compututing",
+        "Prin Info & Data Mgt",
+        "Computer Security"
       ]
     }
   ],

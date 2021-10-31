@@ -7,7 +7,7 @@
 	<div class='sectionContent'>
 		{{#each resume.work}}
 		<div class="jobBlock">
-			<div class='blockHeader'>
+			<div>
 				<span class='title'>{{#if name}}{{name}}{{/if}}</span>
 				{{#if position}} | <span class="position">{{position}}</span>{{/if}}
 				{{#if startDate}}
@@ -17,7 +17,7 @@
 				</span>
 				{{/if}}
 			</div>
-			<div><a href='{{url}}'>{{url}}</a></div>
+			<div class="jobLowerHeader"><a href='{{url}}'>{{url}}</a><span>{{location}}</span></div>
 			{{#if summary}}
 			<div class="summary">
 				<p>{{summary}}</p>
