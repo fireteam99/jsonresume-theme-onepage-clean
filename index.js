@@ -1,31 +1,13 @@
-var fs = require("fs");
-var path = require('path');
-var Handlebars = require("handlebars");
-
-// Handlebars.registerHelper('formatDate', dateString =>
-//     new Date(dateString).toLocaleDateString('en', {
-//         month: 'short',
-//         year: 'numeric',
-//     }),
-// );
+const fs = require("fs");
+const path = require('path');
+const Handlebars = require("handlebars");
+const { DateTime } = require("luxon");
 
 Handlebars.registerHelper('formatDate', function(dateString) {
-    let dateStrArr = dateString.split('-');
+    let specificity = dateString.split('-').length;
 
-    if (dateStrArr[0] && dateStrArr[1] && dateStrArr[2])
-        return new Date(dateString).toLocaleDateString('en', {
-            month: 'short',
-            year: 'numeric',
-            day: 'numeric',
-        });
-
-    if (dateStrArr[0] && dateStrArr[1])
-        return new Date(dateString).toLocaleDateString('en', {
-            month: 'short',
-            year: 'numeric',
-        });
-
-    return dateStrArr;
+    dt = DateTime.fromISO(dateString);
+    return  dt.toLocaleString(specificity === 3 ? DateTime.DATE_MED : { month: 'long', year: 'numeric' })
 })
 
 function render(resume) {

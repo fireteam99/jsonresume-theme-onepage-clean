@@ -51,6 +51,7 @@ a {
 
 .sectionBlock {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -61,7 +62,7 @@ a {
 }
 
 .sectionContent {
-    width: 80%;
+    width: 100%;
     vertical-align: top;
     display: inline-block;
 }
