@@ -8,16 +8,19 @@
 		{{#each resume.work}}
 		<div class="jobBlock">
 			<div class='blockHeader'>
-				<span class='title'>{{#if name}}{{name}}{{/if}}</span>
-				{{#if position}} | <span class="position">{{position}}</span>{{/if}}
-				{{#if startDate}}
+				<spam>
+					<span class='title'>{{#if name}}{{name}}{{/if}}</span>
+					{{#if position}} | <span class="position">{{position}}</span>{{/if}}
+					{{#if startDate}}
+				</spam>
 				<span class='date'>
 					{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate
 					endDate}}{{else}}Present{{/if}}
 				</span>
 				{{/if}}
 			</div>
-			<div class="jobLowerHeader"><a href='{{url}}'>{{url}}</a>{{#if location}}<span>{{location}}</span>{{/if}}</div>
+			<div class="blockSubheader"><a href='{{url}}'>{{url}}</a>{{#if location}}<span>{{location}}</span>{{/if}}
+			</div>
 			{{#if summary}}
 			<div class="summary">
 				<p>{{summary}}</p>

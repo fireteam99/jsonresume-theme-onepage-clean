@@ -95,6 +95,16 @@ a {
     font-size: 18px;
 }
 
+.blockHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockSubheader {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sectionContent {
     width: 100%;
     vertical-align: top;
@@ -112,10 +122,6 @@ a {
 .sectionContent .title {
     font: 16px "Garamond", "Cambria", "Times New Roman", "Times",  serif;
     font-weight: bold;
-}
-
-.sectionContent .date {
-    float: right;
 }
 
 .sectionContent .separator {
@@ -155,13 +161,8 @@ a {
     page-break-inside: avoid;
 }
 
-.jobLowerHeader {
-    display: flex;
-    justify-content: space-between;
-}
-
 .description {
-    text-align: justify;
+    text-align: left;
 }
 
 blockquote.reference {
@@ -175,12 +176,12 @@ blockquote.reference {
 @media only screen and (max-width: 40em) {
     body {
         margin: 0;
-        font-size: 14px;
+        font-size: 12pt;
     }
     #resume {
         margin: 0 auto;
         max-width: 600px;
-        padding: 0.5em 1em;
+        padding: 2em 2em;
         border: none;
     }
     .sectionBlock {
@@ -189,17 +190,46 @@ blockquote.reference {
     .sectionContent {
         width: 100%;
     }
-    .sectionContent .date {
-        padding-right: 2em;
-    }
     .sectionName {
-        width: auto;
+        font-size: 20pt;
     }
     .largeFont {
-        font-size: 23px;
+        font-size: 28pt;
     }
     .smallFont {
         font-size: 14px;
+    }
+    .blockHeader {
+        flex-direction: column;
+    }
+    .blockSubheader {
+        flex-direction: column-reverse;
+    }
+    .sectionLine {
+        margin: 20px 0;
+    }
+    .sectionContent li {
+        font-size: 12pt;
+    }        
+    .sectionContent .title {
+        font-size: 14pt;
+        font-weight: bold;
+    }    
+    .sectionContent .description {
+        font-size: 12pt;
+    }
+    .sectionContent ul {
+        margin-top: 6px;
+    }
+    .sectionContent .separator {
+        height: 7px;
+    }
+    .coursesList {
+        column-count: 1;
+    }
+    #nameBlock {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -221,22 +251,18 @@ blockquote.reference {
         color: black;
     }
     .largeFont {
-        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
         font-size: 23px;
     }
     
     .mediumFont {
-        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
         font-size: 13px;
     }
     
     .smallFont {
-        font-family: "Helvetica", "Calibri", "Arial";
         font-size: 11px;
     }
     
     .tinyFont {
-        font-family: "Helvetica", "Calibri", "Arial";
         font-size: 10px;
     }
     .sectionLine {
