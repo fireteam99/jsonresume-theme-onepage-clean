@@ -173,6 +173,22 @@ blockquote.reference {
 
 /* Media Queries */
 
+@media only screen and (max-width: 846px) {
+    #resume {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 694px) {
+    #resume {
+        padding: 30px 10px;
+    }
+    .sectionBlock {
+        width: 98%;
+    }
+}
+
+
 @media only screen and (max-width: 40em) {
     body {
         margin: 0;
