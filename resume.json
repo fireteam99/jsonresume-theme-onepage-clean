@@ -2,8 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Ray Sy",
-    "label": "Software Engineer",
-    "image": "",
     "email": "raysydev@gmail.com",
     "phone": "+1 (732) 325-8389",
     "url": "https://raysy.dev",
