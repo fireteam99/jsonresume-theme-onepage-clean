@@ -100,7 +100,7 @@ a {
     vertical-align: top;
     display: inline-block;
     padding-left: 8px;
-    border-left: 0.2em solid #CFCFCF;
+    border-left: 0.2em solid #ced5e3;
 }
 
 .sectionContent ul {
@@ -132,8 +132,8 @@ a {
 
 .sectionLine {
     border-style: dashed;
-    border-width: 1px;
-    border-color: #CFCFCF;
+    border-width: 0.01em;
+    border-color: #ebedf3;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -196,7 +196,7 @@ blockquote.reference {
         width: auto;
     }
     .largeFont {
-        font-size: 20px;
+        font-size: 23px;
     }
     .smallFont {
         font-size: 14px;
@@ -206,7 +206,7 @@ blockquote.reference {
 @media print {
     body {
         background: #FFFFFF;
-        font-size: 12px
+        font-size: 11px;
     }
     #resume {
         margin: 0 auto;
@@ -249,13 +249,16 @@ blockquote.reference {
         font-size: 14px;
         font-weight: bold;
     }    
-    .sectionName {
-        font-size: 15px;
+    .sectionContent .description {
+        font-size: 10px;
     }
     .sectionContent ul {
         margin-top: 3px;
     }
     .sectionContent .separator {
         height: 7px;
+    }
+    .sectionName {
+        font-size: 15px;
     }
 }
