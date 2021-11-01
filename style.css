@@ -1,6 +1,6 @@
 body {
     background: #EEEEEE;
-    font: 13px "Garamond", "Calibri", "Times New Roman", "Times", sans-serif;
+    font: 14px "Helvetica", "Calibri", "Arial", sans-serif;
     line-height: 1.4;
     margin: 40px 0;
 }
@@ -11,6 +11,7 @@ em {
 
 p {
     line-height: 1.4;
+    margin: .3em 0;
 }
 
 ul {
@@ -23,6 +24,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #596e9f;
 }
 
 #resume {
@@ -30,9 +32,29 @@ a {
     max-width: 600px;
     padding: 80px 100px;
     background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 4px #aaa;
-    -webkit-box-shadow: 2px 2px 4px #aaa;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
+    100px 100px 80px rgba(0, 0, 0, 0.08)
+  ;
+  border-radius: 0.5em;
+}
+
+#nameBlock {
+    text-align: center;
+}
+
+.contactBlock {
+    text-align: center;
+}
+
+#profilesBlock {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .coursesList {
@@ -43,11 +65,23 @@ a {
 }
 
 .largeFont {
-    font-size: 20px;
+    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+    font-size: 24px;
+}
+
+.mediumFont {
+    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+    font-size: 15px;
 }
 
 .smallFont {
+    font-family: "Helvetica", "Calibri", "Arial";
     font-size: 13px;
+}
+
+.tinyFont {
+    font-family: "Helvetica", "Calibri", "Arial";
+    font-size: 11px;
 }
 
 .sectionBlock {
@@ -57,24 +91,26 @@ a {
 }
 
 .sectionName {
-    width: 18%;
-    vertical-align: top;
-    display: inline-block;
+    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+    font-size: 18px;
 }
 
 .sectionContent {
     width: 100%;
     vertical-align: top;
     display: inline-block;
+    padding-left: 8px;
+    border-left: 0.2em solid #CFCFCF;
 }
 
 .sectionContent ul {
     padding-left: 20px;
     margin-top: 6px;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .sectionContent .title {
+    font: 16px "Garamond", "Cambria", "Times New Roman", "Times",  serif;
     font-weight: bold;
 }
 
@@ -86,6 +122,14 @@ a {
     height: 14px;
 }
 
+.sectionContent li {
+    font-size: 12px;
+}
+
+.sectionContent .description {
+    font-size: 12px;
+}
+
 .sectionLine {
     border-style: dashed;
     border-width: 1px;
@@ -95,7 +139,6 @@ a {
 }
 
 .divider {
-    font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -163,6 +206,7 @@ blockquote.reference {
 @media print {
     body {
         background: #FFFFFF;
+        font-size: 12px
     }
     #resume {
         margin: 0 auto;
@@ -175,5 +219,43 @@ blockquote.reference {
     }
     a {
         color: black;
+    }
+    .largeFont {
+        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+        font-size: 23px;
+    }
+    
+    .mediumFont {
+        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+        font-size: 13px;
+    }
+    
+    .smallFont {
+        font-family: "Helvetica", "Calibri", "Arial";
+        font-size: 11px;
+    }
+    
+    .tinyFont {
+        font-family: "Helvetica", "Calibri", "Arial";
+        font-size: 10px;
+    }
+    .sectionLine {
+        margin: 7px 0;
+    }
+    .sectionContent li {
+        font-size: 10px;
+    }        
+    .sectionContent .title {
+        font-size: 14px;
+        font-weight: bold;
+    }    
+    .sectionName {
+        font-size: 15px;
+    }
+    .sectionContent ul {
+        margin-top: 3px;
+    }
+    .sectionContent .separator {
+        height: 7px;
     }
 }

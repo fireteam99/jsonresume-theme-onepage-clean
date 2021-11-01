@@ -7,7 +7,7 @@ Handlebars.registerHelper('formatDate', function(dateString) {
     let specificity = dateString.split('-').length;
 
     dt = DateTime.fromISO(dateString);
-    return  dt.toLocaleString(specificity === 3 ? DateTime.DATE_MED : { month: 'long', year: 'numeric' })
+    return  dt.toLocaleString(specificity === 3 ? DateTime.DATE_MED : { month: 'short', year: 'numeric' })
 })
 
 function render(resume) {

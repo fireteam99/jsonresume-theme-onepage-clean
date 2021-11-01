@@ -10,14 +10,20 @@
 <div id='basicsBlock' class='smallFont'>
 	<div class='contactBlock'>
 		{{#if email}}
-		<span class='email'>{{email}}</span>
+		<span class='email'><a href="mailto:{{email}}">{{email}}</a></span>
 		{{/if}}
 		{{#if phone}}
 		<span class='divider'>|</span>
 		<span class='phone'>{{phone}}</span>
 		{{/if}}
-		{{#location}}
+		{{#if url}}
+		<br />
+		<span class='url'>
+			<a href='{{url}}'>{{url}}</a>
+		</span>
 		<span class='divider'>|</span>
+		{{/if}}
+		{{#location}}
 		<span class='address'>
 			{{#if city}}{{city}}{{/if}}{{#if region}}, {{region}}{{/if}}{{#if countryCode}}, {{countryCode}}{{/if}}
 		</span>
@@ -30,7 +36,7 @@
 		<span class='url'>
 			<b>{{network}}:</b> <a href='{{url}}'>{{url}}</a>
 		</span>
-		{{#unless @last}}<span class='divider'>|</span>{{/unless}}
+		{{#unless @last}}<span class='divider'> </span>{{/unless}}
 		{{/if}}
 		{{/each}}
 	</div>
@@ -39,7 +45,7 @@
 {{/resume.basics}}
 
 {{#if resume.basics.summary}}
-<div class='sectionLine'></div>
+<hr class='sectionLine' />
 <div id='summaryBlock' class="sectionBlock">
 	<div class='sectionName'>
 		<span>SUMMARY</span>

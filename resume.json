@@ -23,16 +23,6 @@
         "network": "LinkedIn",
         "username": "ray-sy",
         "url": "https://www.linkedin.com/in/ray-sy/"
-      },
-      {
-        "network": "DEV",
-        "username": "fireteam99",
-        "url": "https://dev.to/fireteam99"
-      },
-      {
-        "network": "Angel.co",
-        "username": "ray-sy",
-        "url": "https://angel.co/u/ray-sy"
       }
     ]
   },
@@ -119,12 +109,6 @@
       ],
       "url": "https://github.com/fireteam99/cral-cli",
       "roles": ["Author", "Contributor"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native"
     }
   ],
   "meta": {
