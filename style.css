@@ -262,20 +262,19 @@ blockquote.reference {
   @page {
     size: letter portrait;
     margin: 0;
+    max-width: 8.5in;
   }
   body {
     background: #ffffff;
     font-size: 10pt;
-    margin: .5in;
+    margin: .5in .9in;
   }
   #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0px 0px;
+    padding: 0px;
     border: 0px;
     background: #fff;
     box-shadow: none;
-    -webkit-box-shadow: none;
+    max-width: inherit;
   }
   a {
     color: black;
@@ -288,6 +287,9 @@ blockquote.reference {
   }
   .smallFont {
     font-size: 10pt;
+  }
+  .sectionName {
+    font-size: 13.5pt;
   }
   .sectionLine {
     margin: 7px 0;
@@ -307,8 +309,5 @@ blockquote.reference {
   }
   .sectionContent .separator {
     height: 7px;
-  }
-  .sectionName {
-    font-size: 14pt;
   }
 }
