@@ -5,12 +5,6 @@
     "email": "raysydev@gmail.com",
     "phone": "+1 (732) 325-8389",
     "url": "https://raysy.dev",
-    "location": {
-      "postalCode": "NJ 08816",
-      "city": "East Brunswick",
-      "countryCode": "US",
-      "region": "New Jersey"
-    },
     "profiles": [
       {
         "network": "Github",
@@ -46,15 +40,7 @@
       "studyType": "Bachelor of Science",
       "startDate": "2017-09",
       "endDate": "2020-12",
-      "score": "3.74",
-      "courses": [
-        "Design & Analysis of Algorithms",
-        "Discrete Structures I & II",
-        "Computer Architecture",
-        "Brain-Insp Compututing",
-        "Prin Info & Data Mgt",
-        "Computer Security"
-      ]
+      "score": "3.74"
     }
   ],
   "work": [
@@ -106,7 +92,7 @@
         "Utilized Commander.js and Inquirer.js to build an attractive, user-friendly UI featuring live notifications with node-notifier."
       ],
       "url": "https://github.com/fireteam99/cral-cli",
-      "roles": ["Author", "Contributor"]
+      "roles": ["Author"]
     }
   ],
   "meta": {

@@ -105,6 +105,16 @@ a {
     font-size: 18px;
 }
 
+.blockHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockSubheader {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sectionContent {
     width: 100%;
     vertical-align: top;
@@ -122,10 +132,6 @@ a {
 .sectionContent .title {
     font: 16px "Garamond", "Cambria", "Times New Roman", "Times",  serif;
     font-weight: bold;
-}
-
-.sectionContent .date {
-    float: right;
 }
 
 .sectionContent .separator {
@@ -165,13 +171,8 @@ a {
     page-break-inside: avoid;
 }
 
-.jobLowerHeader {
-    display: flex;
-    justify-content: space-between;
-}
-
 .description {
-    text-align: justify;
+    text-align: left;
 }
 
 blockquote.reference {
@@ -182,15 +183,31 @@ blockquote.reference {
 
 /* Media Queries */
 
+@media only screen and (max-width: 846px) {
+    #resume {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 694px) {
+    #resume {
+        padding: 30px 10px;
+    }
+    .sectionBlock {
+        width: 98%;
+    }
+}
+
+
 @media only screen and (max-width: 40em) {
     body {
         margin: 0;
-        font-size: 14px;
+        font-size: 12pt;
     }
     #resume {
         margin: 0 auto;
         max-width: 600px;
-        padding: 0.5em 1em;
+        padding: 2em 2em;
         border: none;
     }
     .sectionBlock {
@@ -199,24 +216,53 @@ blockquote.reference {
     .sectionContent {
         width: 100%;
     }
-    .sectionContent .date {
-        padding-right: 2em;
-    }
     .sectionName {
-        width: auto;
+        font-size: 20pt;
     }
     .largeFont {
-        font-size: 23px;
+        font-size: 28pt;
     }
     .smallFont {
         font-size: 14px;
+    }
+    .blockHeader {
+        flex-direction: column;
+    }
+    .blockSubheader {
+        flex-direction: column-reverse;
+    }
+    .sectionLine {
+        margin: 20px 0;
+    }
+    .sectionContent li {
+        font-size: 12pt;
+    }        
+    .sectionContent .title {
+        font-size: 14pt;
+        font-weight: bold;
+    }    
+    .sectionContent .description {
+        font-size: 12pt;
+    }
+    .sectionContent ul {
+        margin-top: 6px;
+    }
+    .sectionContent .separator {
+        height: 7px;
+    }
+    .coursesList {
+        column-count: 1;
+    }
+    #nameBlock {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media print {
     body {
         background: #FFFFFF;
-        font-size: 12px
+        font-size: 11px;
     }
     #resume {
         margin: 0 auto;
@@ -231,22 +277,18 @@ blockquote.reference {
         color: black;
     }
     .largeFont {
-        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
         font-size: 23px;
     }
     
     .mediumFont {
-        font-family: "Garamond", "Cambria", "Times New Roman", "Times";
         font-size: 13px;
     }
     
     .smallFont {
-        font-family: "Helvetica", "Calibri", "Arial";
         font-size: 11px;
     }
     
     .tinyFont {
-        font-family: "Helvetica", "Calibri", "Arial";
         font-size: 10px;
     }
     .sectionLine {
@@ -259,14 +301,17 @@ blockquote.reference {
         font-size: 14px;
         font-weight: bold;
     }    
-    .sectionName {
-        font-size: 15px;
+    .sectionContent .description {
+        font-size: 10px;
     }
     .sectionContent ul {
         margin-top: 3px;
     }
     .sectionContent .separator {
         height: 7px;
+    }
+    .sectionName {
+        font-size: 15px;
     }
 }
 	</style>
@@ -277,9 +322,8 @@ blockquote.reference {
 	<div id="resume">
 		<div id='nameBlock' class='largeFont'>
 			<span class='name'>
-				Ray Sy,
+				Ray Sy
 			</span>
-			<span class='label'>Software Engineer</span>
 		</div>
 		<div id='basicsBlock' class='smallFont'>
 			<div class='contactBlock'>
@@ -356,12 +400,15 @@ blockquote.reference {
 			</div>
 			<div class='sectionContent'>
 				<div class='educationBlock'>
+					<div class="blockHeader">
 					<span class='title'>
 						Rutgers University, New Brunswick, NJ
 					</span>
 					<span class='date'>
 						Sep 2017 - Dec 2020
 					</span>
+		
+					</div>
 					<div class=''>
 						Bachelor of Science  - Computer Science
 					</div>
@@ -387,13 +434,16 @@ blockquote.reference {
 			<div class='sectionContent'>
 				<div class="jobBlock">
 					<div class='blockHeader'>
-						<span class='title'>American Express</span>
-						 | <span class="position">Software Engineer</span>
+						<spam>
+							<span class='title'>American Express</span>
+							 | <span class="position">Software Engineer</span>
+						</spam>
 						<span class='date'>
 							Jan 2021 - Present
 						</span>
 					</div>
-					<div class="jobLowerHeader"><a href='https://americanexpress.com'>https://americanexpress.com</a><span>New York, NY</span></div>
+					<div class="blockSubheader"><a href='https://americanexpress.com'>https://americanexpress.com</a><span>New York, NY</span>
+					</div>
 					<ul class='highlights'>
 						<li>Core contributor to site/infrastructure related features/enhancements as a full stack engineer on AMEX&#x27;s GCS Commercial team using React, Redux, and GraphQL. Examples include: SEO optimizations to all &quot;Small Business&quot; pages, and a major refresh for the Platinum credit card, having an estimated combined impact of $369M BBA incremental, annually.</li>
 						<li>Conducted several successful A/B tests, including: building out a new mobile horizontal carousel which had an estimated annual incremental BBA of $150M.</li>
@@ -404,13 +454,16 @@ blockquote.reference {
 				</div>
 				<div class="jobBlock">
 					<div class='blockHeader'>
-						<span class='title'>American Express</span>
-						 | <span class="position">Software Engineering Intern</span>
+						<spam>
+							<span class='title'>American Express</span>
+							 | <span class="position">Software Engineering Intern</span>
+						</spam>
 						<span class='date'>
 							Jun 2020 - Aug 2020
 						</span>
 					</div>
-					<div class="jobLowerHeader"><a href='https://americanexpress.com'>https://americanexpress.com</a><span>New York, NY</span></div>
+					<div class="blockSubheader"><a href='https://americanexpress.com'>https://americanexpress.com</a><span>New York, NY</span>
+					</div>
 					<ul class='highlights'>
 						<li>Created Experience Builder - a tool that empowers non-engineers to generate production ready UI variations for consumer facing sites.</li>
 						<li>Designed a &quot;composer&quot; interface using React.js featuring an interactive canvas, sortable layer tree, and widget palette, making it easy to create components compliant with standardized design guidelines.</li>
@@ -421,13 +474,16 @@ blockquote.reference {
 				</div>
 				<div class="jobBlock">
 					<div class='blockHeader'>
-						<span class='title'>Heat.wav</span>
-						 | <span class="position">Technical Co-Founder</span>
+						<spam>
+							<span class='title'>Heat.wav</span>
+							 | <span class="position">Technical Co-Founder</span>
+						</spam>
 						<span class='date'>
 							Aug 2018 - Present
 						</span>
 					</div>
-					<div class="jobLowerHeader"><a href='https://heatwav.co'>https://heatwav.co</a><span>New York, NY</span></div>
+					<div class="blockSubheader"><a href='https://heatwav.co'>https://heatwav.co</a><span>New York, NY</span>
+					</div>
 					<ul class='highlights'>
 						<li>Leading technical development of a location-based music &amp; artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.</li>
 						<li>Designed and architected Heat.wav&#x27;s tech stack to fit current and anticipated product needs while setting technical standards to ensure a maintainable codebase.</li>
@@ -445,11 +501,14 @@ blockquote.reference {
 			<div class='sectionContent'>
 				<div class="projectBlock">
 					<div class='blockHeader'>
-						<span class='title'>
-							Project C.R.A.L.
+						<span>
+							<span class='title'>
+								Project C.R.A.L.
+							</span>
+							
+							 | <span class="roles">Author,
+								Contributor</span>
 						</span>
-						
-						 | <span class="roles">Author, Contributor</span>
 					</div>
 					<div><a href='https://github.com/fireteam99/cral-cli'>https://github.com/fireteam99/cral-cli</a></div>
 					<div class="description">

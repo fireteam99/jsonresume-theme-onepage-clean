@@ -11,5 +11,11 @@
     "dependencies": {
         "handlebars": "^2.0.0-alpha.4",
         "luxon": "^2.0.2"
+    },
+    "scripts": {
+        "export": "resume export resume.html --format html --theme ."
+    },
+    "devDependencies": {
+        "resume-cli": "^3.0.5"
     }
 }

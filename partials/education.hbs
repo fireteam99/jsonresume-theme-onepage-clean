@@ -18,8 +18,8 @@
 			{{/if}}
 
 			</div>
-			<div class=''>
-				{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, GPA: {{gpa}}{{/if}}
+			<div class='blockHeader'>
+				<span>{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}</span>{{#if score}}<span class="score">GPA: {{score}}</span>{{/if}}
 			</div>
 			{{#if courses.length}}
 			<div id='coursesBlock'>

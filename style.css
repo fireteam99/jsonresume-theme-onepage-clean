@@ -1,6 +1,11 @@
+:root {
+    --header-small-desktop-font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times";
+    --description-small-desktop-font: 10pt/1.4 "Helvetica", "Calibri", "Arial", sans-serif;
+}
+  
 body {
     background: #EEEEEE;
-    font: 14px "Helvetica", "Calibri", "Arial", sans-serif;
+    font: var(--description-small-desktop-font);
     line-height: 1.4;
     margin: 40px 0;
 }
@@ -55,6 +60,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 0.5em;
 }
 
 .coursesList {
@@ -66,22 +72,22 @@ a {
 
 .largeFont {
     font-family: "Garamond", "Cambria", "Times New Roman", "Times";
-    font-size: 24px;
+    font-size: 25pt;
 }
 
 .mediumFont {
     font-family: "Garamond", "Cambria", "Times New Roman", "Times";
-    font-size: 15px;
+    font-size: 14pt;
 }
 
 .smallFont {
     font-family: "Helvetica", "Calibri", "Arial";
-    font-size: 13px;
+    font-size: 11pt;
 }
 
 .tinyFont {
     font-family: "Helvetica", "Calibri", "Arial";
-    font-size: 11px;
+    font-size: 10pt;
 }
 
 .sectionBlock {
@@ -92,17 +98,20 @@ a {
 
 .sectionName {
     font-family: "Garamond", "Cambria", "Times New Roman", "Times";
-    font-size: 18px;
+    font-size: 18pt;
+    color: #2e2e2e;
 }
 
 .blockHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .blockSubheader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sectionContent {
@@ -120,7 +129,7 @@ a {
 }
 
 .sectionContent .title {
-    font: 16px "Garamond", "Cambria", "Times New Roman", "Times",  serif;
+    font: 13pt "Garamond", "Cambria", "Times New Roman", "Times",  serif;
     font-weight: bold;
 }
 
@@ -128,12 +137,16 @@ a {
     height: 14px;
 }
 
-.sectionContent li {
-    font-size: 12px;
+.sectionContent li, .description {
+    font: var(--description-small-desktop-font)
 }
 
-.sectionContent .description {
-    font-size: 12px;
+.sectionContent .position {
+    font: var(--header-small-desktop-font)
+}
+
+.sectionContent .date, .location, .score {
+    font: var(--header-small-desktop-font)
 }
 
 .sectionLine {
@@ -250,9 +263,14 @@ blockquote.reference {
 }
 
 @media print {
+    @page {
+        size: letter portrait;
+        margin: 0;
+    }
     body {
         background: #FFFFFF;
         font-size: 11px;
+        margin: 1in;
     }
     #resume {
         margin: 0 auto;
