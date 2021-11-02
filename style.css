@@ -1,330 +1,314 @@
-:root {
-    --header-small-desktop-font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times" serif;
-    --description-small-desktop-font: 10pt/1.4 "Helvetica", "Calibri", "Arial", sans-serif;
-}
-  
 body {
-    background: #EEEEEE;
-    font: var(--description-small-desktop-font);
-    line-height: 1.4;
-    margin: 40px 0;
+  background: #eeeeee;
+  font: 10pt/1.4 "Helvetica", "Calibri", "Arial";
+  line-height: 1.4;
+  margin: 40px 0;
 }
 
 em {
-    color: #999;
+  color: #999;
 }
 
 p {
-    line-height: 1.4;
-    margin: .3em 0;
+  line-height: 1.4;
+  margin: 0.3em 0;
 }
 
 ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 li {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 a {
-    text-decoration: none;
-    color: #596e9f;
+  text-decoration: none;
+  color: #596e9f;
 }
 
 #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 80px 100px;
-    background: #fff;
-    box-shadow:
-    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
-    100px 100px 80px rgba(0, 0, 0, 0.08)
-  ;
+    100px 100px 80px rgba(0, 0, 0, 0.08);
   border-radius: 0.5em;
 }
 
 .name {
-    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+  font-family: "Garamond", "Cambria", "Times New Roman", "Times";
 }
 
 #nameBlock {
-    text-align: center;
+  text-align: center;
 }
 
 .contactBlock {
-    text-align: center;
+  text-align: center;
 }
 
 #profilesBlock {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.2em;
 }
 
 .coursesList {
-    width: 100%;
-    vertical-align: top;
-    display: inline-block;
-    column-count: 3;
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  column-count: 3;
 }
 
 .largeFont {
-    font-size: 25pt;
+  font-size: 25pt;
 }
 
 .smallFont {
-    font-size: 11pt;
+  font-size: 11pt;
 }
 
 .sectionBlock {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sectionName {
-    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
-    font-size: 18pt;
-    color: #2e2e2e;
+  font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+  font-size: 18pt;
+  color: #2e2e2e;
 }
 
 .blockHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blockSubheader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sectionContent {
-    width: 100%;
-    vertical-align: top;
-    display: inline-block;
-    padding-left: 8px;
-    border-left: 0.2em solid #ced5e3;
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 8px;
+  border-left: 0.2em solid #ced5e3;
 }
 
 .sectionContent ul {
-    padding-left: 20px;
-    margin-top: 6px;
-    list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: disc;
 }
 
 .sectionContent .title {
-    font: 13pt "Garamond", "Cambria", "Times New Roman", "Times",  serif;
-    font-weight: bold;
+  font: 13pt "Garamond", "Cambria", "Times New Roman", "Times";
+  font-weight: bold;
 }
 
 .sectionContent .separator {
-    height: 14px;
+  height: 14px;
 }
 
-.sectionContent li, .description {
-    font: var(--description-small-desktop-font)
+.sectionContent li,
+.description {
+  font: font: 10pt/1.4 "Helvetica", "Calibri", "Arial";
 }
 
-.sectionContent .position {
-    font: var(--header-small-desktop-font)
-}
-
-.sectionContent .date, .location, .score {
-    font: var(--header-small-desktop-font)
+.sectionContent .date,
+.location,
+.score, .position {
+  font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times";
 }
 
 .sectionLine {
-    border-style: dashed;
-    border-width: 0.01em;
-    border-color: #ebedf3;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  border-style: dashed;
+  border-width: 0.01em;
+  border-color: #ebedf3;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .divider {
-    margin-left: 5px;
-    margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .summary {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .skillBlock {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .jobBlock {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .description {
-    text-align: left;
+  text-align: left;
 }
 
 blockquote.reference {
-    margin: 0;
-    margin-bottom: 1em;
+  margin: 0;
+  margin-bottom: 1em;
 }
-
 
 /* Media Queries */
 
 @media only screen and (max-width: 846px) {
-    #resume {
-        padding: 30px 50px;
-    }
+  #resume {
+    padding: 30px 50px;
+  }
 }
 
 @media only screen and (max-width: 694px) {
-    #resume {
-        padding: 30px 10px;
-    }
-    .sectionBlock {
-        width: 98%;
-    }
+  #resume {
+    padding: 30px 10px;
+  }
+  .sectionBlock {
+    width: 98%;
+  }
 }
 
-
 @media only screen and (max-width: 40em) {
-    body {
-        margin: 0;
-        font-size: 12pt;
-    }
-    #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 2em 2em;
-        border: none;
-    }
-    .sectionBlock {
-        flex-direction: column;
-    }
-    .sectionContent {
-        width: 100%;
-    }
-    .sectionName {
-        font-size: 20pt;
-    }
-    .largeFont {
-        font-size: 28pt;
-    }
-    .smallFont {
-        font-size: 14px;
-    }
-    .blockHeader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .blockSubheader {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-    .sectionLine {
-        margin: 20px 0;
-    }
-    .sectionContent li {
-        font-size: 12pt;
-    }        
-    .sectionContent .title {
-        font-size: 14pt;
-        font-weight: bold;
-    }    
-    .sectionContent .description {
-        font-size: 12pt;
-    }
-    .sectionContent ul {
-        margin-top: 6px;
-    }
-    .sectionContent .separator {
-        height: 7px;
-    }
-    .coursesList {
-        column-count: 1;
-    }
-    #nameBlock {
-        display: flex;
-        flex-direction: column;
-    }
+  body {
+    margin: 0;
+    font-size: 12pt;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em 2em;
+    border: none;
+  }
+  .sectionBlock {
+    flex-direction: column;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionName {
+    font-size: 20pt;
+  }
+  .largeFont {
+    font-size: 28pt;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+  .blockHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blockSubheader {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .sectionLine {
+    margin: 20px 0;
+  }
+  .sectionContent li {
+    font-size: 12pt;
+  }
+  .sectionContent .title {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+  .sectionContent .description {
+    font-size: 12pt;
+  }
+  .sectionContent ul {
+    margin-top: 6px;
+  }
+  .sectionContent .separator {
+    height: 7px;
+  }
+  .coursesList {
+    column-count: 1;
+  }
+  #nameBlock {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-    #resume {
-        padding: 1.5em 1em;
-    }
+  #resume {
+    padding: 1.5em 1em;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    #resume {
-        padding: 1em .5em;
-    }
+  #resume {
+    padding: 1em 0.5em;
+  }
 }
 
 @media print {
-    @page {
-        size: letter portrait;
-        margin: 0;
-    }
-    body {
-        background: #FFFFFF;
-        font-size: 11px;
-        margin: 1in;
-    }
-    #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0px 0px;
-        border: 0px;
-        background: #fff;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-    }
-    a {
-        color: black;
-    }
-    .largeFont {
-        font-size: 23px;
-    }
-    
-    .mediumFont {
-        font-size: 13px;
-    }
-    
-    .smallFont {
-        font-size: 11px;
-    }
-    
-    .tinyFont {
-        font-size: 10px;
-    }
-    .sectionLine {
-        margin: 7px 0;
-    }
-    .sectionContent li {
-        font-size: 10px;
-    }        
-    .sectionContent .title {
-        font-size: 14px;
-        font-weight: bold;
-    }    
-    .sectionContent .description {
-        font-size: 10px;
-    }
-    .sectionContent ul {
-        margin-top: 3px;
-    }
-    .sectionContent .separator {
-        height: 7px;
-    }
-    .sectionName {
-        font-size: 15px;
-    }
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+  body {
+    background: #ffffff;
+    font-size: 10pt;
+    margin: .5in;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  a {
+    color: black;
+  }
+  .skillBlock {
+      margin-bottom: 0;
+  }
+  .largeFont {
+    font-size: 20pt;
+  }
+  .smallFont {
+    font-size: 10pt;
+  }
+  .sectionLine {
+    margin: 7px 0;
+  }
+  .sectionContent li, .description {
+    font-size: 8pt;
+  }
+  .sectionContent .date, .location, .score, .position {
+    font-size: 10pt;
+  }
+  .sectionContent .title {
+    font-size: 11pt;
+    font-weight: bold;
+  }
+  .sectionContent ul {
+    margin-top: 3px;
+  }
+  .sectionContent .separator {
+    height: 7px;
+  }
+  .sectionName {
+    font-size: 14pt;
+  }
 }
