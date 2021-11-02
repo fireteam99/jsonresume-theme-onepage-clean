@@ -1,5 +1,5 @@
 :root {
-    --header-small-desktop-font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times";
+    --header-small-desktop-font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times" serif;
     --description-small-desktop-font: 10pt/1.4 "Helvetica", "Calibri", "Arial", sans-serif;
 }
   
@@ -48,6 +48,10 @@ a {
   border-radius: 0.5em;
 }
 
+.name {
+    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+}
+
 #nameBlock {
     text-align: center;
 }
@@ -71,23 +75,11 @@ a {
 }
 
 .largeFont {
-    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
     font-size: 25pt;
 }
 
-.mediumFont {
-    font-family: "Garamond", "Cambria", "Times New Roman", "Times";
-    font-size: 14pt;
-}
-
 .smallFont {
-    font-family: "Helvetica", "Calibri", "Arial";
     font-size: 11pt;
-}
-
-.tinyFont {
-    font-family: "Helvetica", "Calibri", "Arial";
-    font-size: 10pt;
 }
 
 .sectionBlock {
@@ -230,9 +222,11 @@ blockquote.reference {
     }
     .blockHeader {
         flex-direction: column;
+        align-items: flex-start;
     }
     .blockSubheader {
         flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .sectionLine {
         margin: 20px 0;
@@ -259,6 +253,18 @@ blockquote.reference {
     #nameBlock {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #resume {
+        padding: 1.5em 1em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #resume {
+        padding: 1em .5em;
     }
 }
 
