@@ -175,16 +175,16 @@ blockquote.reference {
   }
 }
 
-@media only screen and (max-width: 694px) {
+@media only screen and (max-width: 718px) {
   #resume {
-    padding: 30px 10px;
+    padding: 30px 18px;
   }
   .sectionBlock {
     width: 98%;
   }
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 694px) {
   body {
     margin: 0;
     font-size: 12pt;
@@ -274,7 +274,7 @@ blockquote.reference {
     border: 0px;
     background: #fff;
     box-shadow: none;
-    max-width: inherit;
+    max-width: 8.5in;
   }
   a {
     color: black;
