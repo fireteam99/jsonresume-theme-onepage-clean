@@ -51,7 +51,7 @@
       "url": "https://americanexpress.com",
       "startDate": "2021-01",
       "highlights": [
-        "Core contributor to site/infrastructure related features/enhancements as a full stack engineer on AMEX's GCS Commercial team using React, Redux, and GraphQL. Examples include: SEO optimizations to all \"Small Business\" pages, and a major refresh for the Platinum credit card, having an estimated combined impact of $369M BBA incremental, annually.",
+        "Contributed to site/infrastructure related features and enhancements as a full stack engineer on AMEX's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
         "Conducted several successful A/B tests, including: building out a new mobile horizontal carousel which had an estimated annual incremental BBA of $150M.",
         "Spearheaded WCAG (accessibility) compliance efforts on our site by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by more than 83%.",
         "Created and promoted an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and saving hours of wasted time."
@@ -67,7 +67,7 @@
       "highlights": [
         "Created Experience Builder - a tool that empowers non-engineers to generate production ready UI variations for consumer facing sites.",
         "Designed a \"composer\" interface using React.js featuring an interactive canvas, sortable layer tree, and widget palette, making it easy to create components compliant with standardized design guidelines.",
-        "Took initiative to implement a practical code generation feature which produced import information and JSX for any visual composition.",
+        "Initiated and implemented a practical code generation feature which produced import information and JSX for any visual composition.",
         "Engineered a persistence and versioning system that allowed multiple users to collaborate concurrently on a composition using PostgreSQL and Express.js."
       ]
     },
@@ -78,7 +78,7 @@
       "url": "https://heatwav.co",
       "startDate": "2018-08",
       "highlights": [
-        "Leading technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
+        "Led technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
         "Designed and architected Heat.wav's tech stack to fit current and anticipated product needs while setting technical standards to ensure a maintainable codebase.",
         "Collaborated closely with our designer, product manager, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Slack and Storybook."
       ]
