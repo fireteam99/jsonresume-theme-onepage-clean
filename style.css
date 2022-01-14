@@ -129,7 +129,7 @@ a {
 
 .sectionContent .date,
 .location,
-.score, .position {
+.score, .position, .roles {
   font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times";
 }
 
@@ -147,6 +147,7 @@ a {
 }
 
 .summary {
+  font-style: italic;
   margin-top: 6px;
 }
 
@@ -159,6 +160,7 @@ a {
 }
 
 .description {
+  font-style: italic;
   text-align: left;
 }
 
@@ -294,10 +296,10 @@ blockquote.reference {
   .sectionLine {
     margin: 7px 0;
   }
-  .sectionContent li, .description {
+  .sectionContent li {
     font-size: 8pt;
   }
-  .sectionContent .date, .location, .score, .position {
+  .sectionContent .date, .location, .score, .position, .roles {
     font-size: 10pt;
   }
   .sectionContent .title {
@@ -309,5 +311,8 @@ blockquote.reference {
   }
   .sectionContent .separator {
     height: 7px;
+  }
+  .sectionContent .description, .summary {
+    font-size: 10pt;
   }
 }

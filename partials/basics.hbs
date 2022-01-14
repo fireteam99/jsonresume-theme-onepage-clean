@@ -12,16 +12,23 @@
 		{{#if email}}
 		<span class='email'><a href="mailto:{{email}}">{{email}}</a></span>
 		{{/if}}
-		{{#if phone}}
-		<span class='divider'>|</span>
-		<span class='phone'>{{phone}}</span>
-		{{/if}}
-		{{#if url}}
-		<br />
-		<span class='url'>
-			<a href='{{url}}'>{{url}}</a>
-		</span>
-		{{/if}}
+		{{#ifCond phone '||' url}}
+			<span class='divider'>|</span>
+			{{#if phone}}
+			<span class='phone'>{{phone}}</span>
+			{{/if}}
+			{{#if url}}
+			<span class='url'>
+				<a href='{{url}}'>{{url}}</a>
+			</span>
+			{{/if}}
+		{{/ifCond}}
+		{{#ifCond url '&&' phone}}
+			<br />
+			<span class='url'>
+				<a href='{{url}}'>{{url}}</a>
+			</span>
+		{{/ifCond}}
 		{{#location}}
 		<span class='divider'>|</span>
 		<span class='address'>

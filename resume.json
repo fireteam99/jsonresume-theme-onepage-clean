@@ -3,7 +3,6 @@
   "basics": {
     "name": "Ray Sy",
     "email": "raysydev@gmail.com",
-    "phone": "+1 (732) 325-8389",
     "url": "https://raysy.dev",
     "profiles": [
       {
@@ -18,31 +17,6 @@
       }
     ]
   },
-  "skills": [
-    {
-      "name": "Languages",
-      "keywords": ["Javascript", "Python", "Java", "C", "Dart", "SQL", "Shell", "HTML", "CSS"]
-    },
-    {
-      "name": "Frameworks/Tools",
-      "keywords": ["React", "Flutter", "Express", "Flask", "Sklearn", "Sketch", "Photoshop", "Illustrator", "Invision"]
-    },
-    {
-      "name": "Technologies",
-      "keywords": ["Firebase", "MongoDB", "PostgreSQL", "Heroku", "Docker", "Redis", "Git"]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Rutgers University, New Brunswick, NJ",
-      "url": "https://www.rutgers.edu/",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2017-09",
-      "endDate": "2020-12",
-      "score": "3.74"
-    }
-  ],
   "work": [
     {
       "name": "American Express",
@@ -50,11 +24,11 @@
       "location": "New York, NY",
       "url": "https://americanexpress.com",
       "startDate": "2021-01",
+      "summary": "Developed site/infrastructure related features and enhancements as a full stack engineer on AMEX's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
       "highlights": [
-        "Contributed to site/infrastructure related features and enhancements as a full stack engineer on AMEX's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
         "Conducted several successful A/B tests, including: building out a new mobile horizontal carousel which had an estimated annual incremental BBA of $150M.",
-        "Spearheaded WCAG (accessibility) compliance efforts on our site by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by more than 83%.",
-        "Created and promoted an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and saving hours of wasted time."
+        "Spearheaded site wide accessibility enhancements by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by more than 95%.",
+        "Created and promoted an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and cutting workflow times by 90%."
       ]
     },
     {
@@ -64,8 +38,8 @@
       "url": "https://americanexpress.com",
       "startDate": "2020-06",
       "endDate": "2020-08",
+      "summary": "Created Experience Builder - a tool that empowers non-engineers to generate production ready UI variations for consumer facing sites.",
       "highlights": [
-        "Created Experience Builder - a tool that empowers non-engineers to generate production ready UI variations for consumer facing sites.",
         "Designed a \"composer\" interface using React.js featuring an interactive canvas, sortable layer tree, and widget palette, making it easy to create components compliant with standardized design guidelines.",
         "Initiated and implemented a practical code generation feature which produced import information and JSX for any visual composition.",
         "Engineered a persistence and versioning system that allowed multiple users to collaborate concurrently on a composition using PostgreSQL and Express.js."
@@ -77,8 +51,8 @@
       "location": "New York, NY",
       "url": "https://heatwav.co",
       "startDate": "2018-08",
+      "summary": "Led technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
       "highlights": [
-        "Led technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
         "Designed and architected Heat.wav's tech stack to fit current and anticipated product needs while setting technical standards to ensure a maintainable codebase.",
         "Collaborated closely with our designer, product manager, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Slack and Storybook."
       ]
@@ -88,9 +62,6 @@
     {
       "name": "Project C.R.A.L.",
       "description": "Created an open source CLI published on NPM that automates course registration for Rutgers University using Node.js & Puppeteer.",
-      "highlights": [
-        "Utilized Commander.js and Inquirer.js to build an attractive, user-friendly UI featuring live notifications with node-notifier."
-      ],
       "url": "https://github.com/fireteam99/cral-cli",
       "roles": ["Author"]
     }
@@ -99,5 +70,56 @@
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
     "lastModified": "2017-12-24T15:53:00"
-  }
+  },
+  "education": [
+    {
+      "institution": "Rutgers University, New Brunswick, NJ",
+      "url": "https://www.rutgers.edu/",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2017-09",
+      "endDate": "2020-12",
+      "score": "3.74"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Javascript",
+        "Python",
+        "Java",
+        "C",
+        "Dart",
+        "SQL",
+        "Shell",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Frameworks/Tools",
+      "keywords": [
+        "React",
+        "Flutter",
+        "Express",
+        "Flask",
+        "Sklearn",
+        "Sketch",
+        "Invision"
+      ]
+    },
+    {
+      "name": "Technologies",
+      "keywords": [
+        "Firebase",
+        "MongoDB",
+        "PostgreSQL",
+        "Heroku",
+        "Docker",
+        "Redis",
+        "Git"
+      ]
+    }
+  ]
 }
