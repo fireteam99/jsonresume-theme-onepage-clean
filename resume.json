@@ -24,10 +24,10 @@
       "location": "New York, NY",
       "url": "https://americanexpress.com",
       "startDate": "2021-01",
-      "summary": "Developed site/infrastructure related features and enhancements as a full stack engineer on AMEX's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
+      "summary": "Developed site/infrastructure related features and enhancements as a full stack engineer on Amex's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
       "highlights": [
-        "Conducted several successful A/B tests, including: building out a new mobile horizontal carousel which had an estimated annual incremental BBA of $150M.",
-        "Spearheaded site wide accessibility enhancements by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by more than 95%.",
+        "Conducted several successful A/B tests, including: building out a new mobile horizontal carousel with an estimated annual incremental BBA of $150M.",
+        "Spearheaded site wide accessibility enhancements by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by over 95%.",
         "Created and promoted an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and cutting workflow times by 90%."
       ]
     },
@@ -54,7 +54,7 @@
       "summary": "Led technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
       "highlights": [
         "Designed and architected Heat.wav's tech stack to fit current and anticipated product needs while setting technical standards to ensure a maintainable codebase.",
-        "Collaborated closely with our designer, product manager, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Slack and Storybook."
+        "Collaborated closely with our designer, product manager, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Slack and Invision."
       ]
     }
   ],
