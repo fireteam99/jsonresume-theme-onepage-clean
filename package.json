@@ -1,14 +1,21 @@
 {
-    "name": "jsonresume-theme-onepage-updated",
-    "version": "1.0.3",
-    "description": "An update of the onepage theme (a compact theme for JSON Resume, designed for printing).",
-    "author": "Daniel A. Rodríguez Caballero",
+    "name": "jsonresume-theme-onepage-clean",
+    "version": "1.0.0",
+    "description": "An modern clean version of the onepage theme (a compact theme for JSON Resume, designed for printing).",
+    "author": "Ray Sy",
     "repository": {
         "type": "git",
-        "url": "https://github.com/danielrodcaball/jsonresume-theme-onepage-updated"
+        "url": "https://github.com/fireteam99/jsonresume-theme-onepage-clean"
     },
     "license": "MIT",
     "dependencies": {
-        "handlebars": "^2.0.0-alpha.4"
+        "handlebars": "^2.0.0-alpha.4",
+        "luxon": "^2.0.2"
+    },
+    "scripts": {
+        "export": "resume export resume.html --format html --theme ."
+    },
+    "devDependencies": {
+        "resume-cli": "^3.0.5"
     }
 }

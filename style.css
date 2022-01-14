@@ -1,172 +1,318 @@
 body {
-    background: #EEEEEE;
-    font: 13px "Times New Roman", Times, sans-serif;
-    line-height: 1.4;
-    margin: 40px 0;
+  background: #eeeeee;
+  font: 10pt/1.4 "Helvetica", "Calibri", "Arial";
+  line-height: 1.4;
+  margin: 40px 0;
 }
 
 em {
-    color: #999;
+  color: #999;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
+  margin: 0.3em 0;
 }
 
 ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 li {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #596e9f;
 }
 
 #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 80px 100px;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 4px #aaa;
-    -webkit-box-shadow: 2px 2px 4px #aaa;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
+    100px 100px 80px rgba(0, 0, 0, 0.08);
+  border-radius: 0.5em;
+}
+
+.name {
+  font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+}
+
+#nameBlock {
+  text-align: center;
+}
+
+.contactBlock {
+  text-align: center;
+}
+
+#profilesBlock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.2em;
 }
 
 .coursesList {
-    width: 28%;
-    vertical-align: top;
-    display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  column-count: 3;
 }
 
 .largeFont {
-    font-size: 20px;
+  font-size: 25pt;
 }
 
 .smallFont {
-    font-size: 13px;
+  font-size: 11pt;
 }
 
 .sectionBlock {
-    display: flex;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sectionName {
-    width: 18%;
-    vertical-align: top;
-    display: inline-block;
+  font-family: "Garamond", "Cambria", "Times New Roman", "Times";
+  font-size: 18pt;
+  color: #2e2e2e;
+}
+
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockSubheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sectionContent {
-    width: 80%;
-    vertical-align: top;
-    display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 8px;
+  border-left: 0.2em solid #ced5e3;
 }
 
 .sectionContent ul {
-    padding-left: 20px;
-    margin-top: 6px;
-    list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: disc;
 }
 
 .sectionContent .title {
-    font-weight: bold;
-}
-
-.sectionContent .date {
-    float: right;
+  font: 13pt "Garamond", "Cambria", "Times New Roman", "Times";
+  font-weight: bold;
 }
 
 .sectionContent .separator {
-    height: 14px;
+  height: 14px;
+}
+
+.sectionContent li,
+.description {
+  font: font: 10pt/1.4 "Helvetica", "Calibri", "Arial";
+}
+
+.sectionContent .date,
+.location,
+.score, .position, .roles {
+  font: 11pt/1.4 "Garamond", "Cambria", "Times New Roman", "Times";
 }
 
 .sectionLine {
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #CFCFCF;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  border-style: dashed;
+  border-width: 0.01em;
+  border-color: #ebedf3;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .divider {
-    font-weight: bold;
-    margin-left: 5px;
-    margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .summary {
-    margin-top: 6px;
+  font-style: italic;
+  margin-top: 6px;
 }
 
 .skillBlock {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .jobBlock {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .description {
-    text-align: justify;
+  font-style: italic;
+  text-align: left;
 }
 
 blockquote.reference {
-    margin: 0;
-    margin-bottom: 1em;
+  margin: 0;
+  margin-bottom: 1em;
 }
-
 
 /* Media Queries */
 
-@media only screen and (max-width: 40em) {
-    body {
-        margin: 0;
-        font-size: 14px;
-    }
-    #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0.5em 1em;
-        border: none;
-    }
-    .sectionBlock {
-        flex-direction: column;
-    }
-    .sectionContent {
-        width: 100%;
-    }
-    .sectionContent .date {
-        padding-right: 2em;
-    }
-    .sectionName {
-        width: auto;
-    }
-    .largeFont {
-        font-size: 20px;
-    }
-    .smallFont {
-        font-size: 14px;
-    }
+@media only screen and (max-width: 846px) {
+  #resume {
+    padding: 30px 50px;
+  }
+}
+
+@media only screen and (max-width: 718px) {
+  #resume {
+    padding: 30px 18px;
+  }
+  .sectionBlock {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 694px) {
+  body {
+    margin: 0;
+    font-size: 12pt;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em 2em;
+    border: none;
+  }
+  .sectionBlock {
+    flex-direction: column;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionName {
+    font-size: 20pt;
+  }
+  .largeFont {
+    font-size: 28pt;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+  .blockHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blockSubheader {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .sectionLine {
+    margin: 20px 0;
+  }
+  .sectionContent li {
+    font-size: 12pt;
+  }
+  .sectionContent .title {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+  .sectionContent .description {
+    font-size: 12pt;
+  }
+  .sectionContent ul {
+    margin-top: 6px;
+  }
+  .sectionContent .separator {
+    height: 7px;
+  }
+  .coursesList {
+    column-count: 1;
+  }
+  #nameBlock {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #resume {
+    padding: 1.5em 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #resume {
+    padding: 1em 0.5em;
+  }
 }
 
 @media print {
-    body {
-        background: #FFFFFF;
-    }
-    #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0px 0px;
-        border: 0px;
-        background: #fff;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-    }
-    a {
-        color: black;
-    }
+  @page {
+    size: letter portrait;
+    margin: 0;
+    max-width: 8.5in;
+  }
+  body {
+    background: #ffffff;
+    font-size: 10pt;
+    margin: .5in .9in;
+  }
+  #resume {
+    padding: 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    max-width: 8.5in;
+  }
+  a {
+    color: black;
+  }
+  .skillBlock {
+      margin-bottom: 0;
+  }
+  .largeFont {
+    font-size: 20pt;
+  }
+  .smallFont {
+    font-size: 10pt;
+  }
+  .sectionName {
+    font-size: 13.5pt;
+  }
+  .sectionLine {
+    margin: 7px 0;
+  }
+  .sectionContent li {
+    font-size: 8pt;
+  }
+  .sectionContent .date, .location, .score, .position, .roles {
+    font-size: 10pt;
+  }
+  .sectionContent .title {
+    font-size: 11pt;
+    font-weight: bold;
+  }
+  .sectionContent ul {
+    margin-top: 3px;
+  }
+  .sectionContent .separator {
+    height: 7px;
+  }
+  .sectionContent .description, .summary {
+    font-size: 10pt;
+  }
 }
