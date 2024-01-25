@@ -14,8 +14,8 @@ Move to the `resume.json` folder and run:
 
 ```bash
 npm install -g resume-cli
-npm install jsonresume-theme-onepage-updated
-resume serve -t onepage-updated
+npm install jsonresume-theme-onepage-clean
+resume serve -t onepage-clean
 ```
 
 ## Developping
