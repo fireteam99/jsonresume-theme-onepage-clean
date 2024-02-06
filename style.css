@@ -312,7 +312,10 @@ blockquote.reference {
   .sectionContent .separator {
     height: 7px;
   }
-  .sectionContent .description, .summary {
+  .sectionContent .description {
     font-size: 10pt;
+  }
+  .summary {
+    font-size: 8.5pt;
   }
 }

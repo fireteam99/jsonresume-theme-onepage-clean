@@ -19,16 +19,30 @@
   },
   "work": [
     {
+      "name": "Medallion",
+      "position": "Software Engineer",
+      "location": "San Francisco, CA",
+      "url": "https://medallion.co",
+      "startDate": "2021-06",
+      "summary": "Developed performant, automation-centric product initiatives as a full-stack engineer utilizing Django, React, and GraphQL at a fast moving health-tech startup.",
+      "highlights": [
+        "Pioneered GraphQL at Medallion by handling the initial integration, migrating inefficient REST endpoints, and cultivating an active community - improving app performance, code architecture, and development velocity.",
+        "Built a robust email notification system for our high-throughput provider import pipeline using Celery and Customer.io - decreasing turn around times by 30%.",
+        "Integrated a battle-tested verifications service using Celerybeat and Pusher into the credentialing platform, ensuring real-time provider compliance while streamlining operational efficiency."
+      ]
+    },
+    {
       "name": "American Express",
       "position": "Software Engineer",
       "location": "New York, NY",
       "url": "https://americanexpress.com",
       "startDate": "2021-01",
+      "endDate": "2022-05",
       "summary": "Developed site/infrastructure related features and enhancements as a full stack engineer on Amex's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
       "highlights": [
-        "Conducted several successful A/B tests, including: building out a new mobile horizontal carousel with an estimated annual incremental revenue of $150M.",
-        "Spearheaded site wide accessibility enhancements by organizing a list of outstanding violations while working closely with PMs and developers to reduce the number of issues by over 95%.",
-        "Created and promoted an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and cutting workflow times by 90%."
+        "Executed multiple successful A/B tests, notably creating an enhanced mobile horizontal carousel that projected an annual incremental revenue boost of $150M.",
+        "Spearheaded site-wide accessibility enhancements by cataloging outstanding violations while working closely with PMs and developers to reduce the number of issues by over 95%.",
+        "Created and popularized an internal Chrome extension to automate syncing authentication cookies between local and test environments - improving developer experience and cutting workflow times by 90%."
       ]
     },
     {
@@ -40,8 +54,7 @@
       "endDate": "2020-08",
       "summary": "Created Experience Builder - a tool that empowers non-engineers to generate production ready UI variations for consumer facing sites.",
       "highlights": [
-        "Designed a \"composer\" interface using React.js featuring an interactive canvas, sortable layer tree, and widget palette, making it easy to create components compliant with standardized design guidelines.",
-        "Initiated and implemented a practical code generation feature which produced import information and JSX for any visual composition.",
+        "Designed a “composer” UI using React.js featuring an interactive canvas, sortable layer tree, widget palette, and export panel, making it intuitive to create components compliant with standardized design guidelines.",
         "Engineered a persistence and versioning system that allowed multiple users to collaborate concurrently on a composition using PostgreSQL and Express.js."
       ]
     },
@@ -51,19 +64,12 @@
       "location": "New York, NY",
       "url": "https://heatwav.co",
       "startDate": "2018-08",
-      "summary": "Led technical development of a location-based music & artist discovery platform undergoing beta-testing that placed in the quarter finals at NYU Innovention, and semi finals at RU Innovators.",
+      "endDate": "2022-09",
+      "summary": "Led technical development of a location-based music & artist discovery platform that placed in the quarter finals at NYU InnoVention, and semi finals at RU Innovators.",
       "highlights": [
         "Designed and architected Heat.wav's tech stack to fit current and anticipated product needs while setting technical standards to ensure a maintainable codebase.",
-        "Collaborated closely with our designer, product manager, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Slack and Invision."
+        "Collaborated closely with our designer, product expert, and co-developers to effectively translate and delegate feature requests and wireframes into detailed objectives using Asana, Invision, and Slack."
       ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Project C.R.A.L.",
-      "description": "Created an open source CLI published on NPM that automates course registration for Rutgers University using Node.js & Puppeteer.",
-      "url": "https://github.com/fireteam99/cral-cli",
-      "roles": ["Author"]
     }
   ],
   "meta": {
@@ -88,10 +94,10 @@
       "keywords": [
         "Javascript",
         "Python",
+        "SQL",
         "Java",
         "C",
         "Dart",
-        "SQL",
         "Shell",
         "HTML",
         "CSS"
@@ -101,24 +107,26 @@
       "name": "Frameworks/Tools",
       "keywords": [
         "React",
-        "Flutter",
+        "Django",
         "Express",
+        "Next.js",
         "Flask",
-        "Sklearn",
+        "Flutter",
         "Sketch",
-        "Invision"
+        "Figma"
       ]
     },
     {
       "name": "Technologies",
       "keywords": [
-        "Firebase",
-        "MongoDB",
+        "GraphQL",
         "PostgreSQL",
-        "Heroku",
+        "MongoDB",
         "Docker",
-        "Redis",
-        "Git"
+        "AWS",
+        "Heroku",
+        "Firebase",
+        "Redis"
       ]
     }
   ]
