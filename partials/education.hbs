@@ -8,18 +8,20 @@
 		{{#each resume.education}}
 		<div class='educationBlock'>
 			<div class="blockHeader">
-			<span class='title'>
-				{{#if institution}}{{institution}}{{/if}}
-			</span>
-			{{#if startDate}}
-			<span class='date'>
-				{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate endDate}}{{else}}Present{{/if}}
-			</span>
-			{{/if}}
+				<span class='title'>
+					{{#if institution}}{{institution}}{{/if}}
+				</span>
+				{{#if startDate}}
+				<span class='date'>
+					{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate
+					endDate}}{{else}}Present{{/if}}
+				</span>
+				{{/if}}
 
 			</div>
 			<div class='blockHeader'>
-				<span>{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}</span>{{#if score}}<span class="score">GPA: {{score}}</span>{{/if}}
+				<span>{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}</span>{{#if score}}<span
+					class="score">GPA: {{score}}</span>{{else}}<span class="score">Honors: {{honors}}</span>{{/if}}
 			</div>
 			{{#if courses.length}}
 			<div id='coursesBlock'>
