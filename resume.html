@@ -278,7 +278,7 @@ blockquote.reference {
   }
   body {
     background: #ffffff;
-    font-size: 10pt;
+    font-size: 9.5pt;
     margin: .5in .9in;
   }
   #resume {
@@ -298,22 +298,22 @@ blockquote.reference {
     font-size: 20pt;
   }
   .smallFont {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .sectionName {
-    font-size: 13.5pt;
+    font-size: 13pt;
   }
   .sectionLine {
     margin: 7px 0;
   }
   .sectionContent li {
-    font-size: 8pt;
+    font-size: 7.5pt;
   }
   .sectionContent .date, .location, .score, .position, .roles {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .sectionContent .title {
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight: bold;
   }
   .sectionContent ul {
@@ -323,10 +323,10 @@ blockquote.reference {
     height: 7px;
   }
   .sectionContent .description {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .summary {
-    font-size: 8.5pt;
+    font-size: 8pt;
   }
 }
 
@@ -370,24 +370,44 @@ blockquote.reference {
 				<div class="jobBlock">
 					<div class='blockHeader'>
 						<spam>
+							<span class='title'>Comulate</span>
+							 | <span class="position">Senior Software Engineer</span>
+						</spam>
+						<span class='date'>
+							Apr 2026 - Present
+						</span>
+					</div>
+					<div class="blockSubheader"><a href='https://www.comulate.com/'>https://www.comulate.com/</a><span class="location">San Francisco, CA</span>
+					</div>
+					<div class="summary">
+						<p>Developing an autonomous insurance servicing agent alongside ML engineers and an insurance SME, in close partnership with a design-partner brokerage.</p>
+					</div>
+					<ul class='highlights'>
+						<li>Architected a unified pipeline for production runs and offline evals, combining sandboxed execution (E2B), webhook-triggered orchestration with dedup/gating, and context assembly over a ~1M-document BigQuery corpus.</li>
+						<li>Improved agent eval accuracy by ~60% through prompt engineering, harness iteration, and custom tooling to trace agent reasoning, diagnose context gaps, and match workstreams across threads.</li>
+						<li>Shipped an AI-native email client with source-linked agent summaries, suggested replies, and a diff viewer for auditing agent edits.</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<spam>
 							<span class='title'>Overjet</span>
 							 | <span class="position">Senior Software Engineer</span>
 						</spam>
 						<span class='date'>
-							Aug 2024 - Present
+							Aug 2024 - Apr 2026
 						</span>
 					</div>
 					<div class="blockSubheader"><a href='https://overjet.ai'>https://overjet.ai</a><span class="location">San Francisco, CA</span>
 					</div>
 					<div class="summary">
-						<p>Core Product Engineer and Technical Lead for a 6-engineer Provider Network Management (PNM) squad, driving the end-to-end modernization of both frontend and backend stacks while delivering critical credentialing and payer enrollment workflows.</p>
+						<p>Led a 6-engineer squad modernizing frontend and backend stacks for a Provider Network Management platform, delivering credentialing and payer enrollment workflows.</p>
 					</div>
 					<ul class='highlights'>
-						<li>Spearheaded the migration to a &#x27;Provider-first&#x27; architecture, centralizing data ownership to eliminate sync complexity and unblocking the launch for 3 major payers.</li>
-						<li>Secured commercial contract with large payer by shipping a production-ready Public API in two weeks, replacing fragile Express routes with a type-safe Hono/Arktype architecture.</li>
+						<li>Spearheaded a data model re-architecture to centralize ownership across providers, practices, and payers, eliminating sync complexity and unblocking 3 major payer launches.</li>
+						<li>Secured commercial contract with large payer by shipping a production-ready Public API in two weeks, replacing legacy Express routes with a type-safe Hono/Arktype architecture.</li>
 						<li>Migrated test infrastructure from serial Dockerized Postgres to parallelized Pglite, reducing CI runtime by 60% and cutting local execution from several minutes to sub-minute.</li>
-						<li>Modernized the frontend by introducing GraphQL for E2E type safety while refactoring tightly-coupled legacy components into a modular, hook-based architecture.</li>
-						<li>Consolidated fragmented polyglot services into a unified TypeScript monolith, drastically reducing cognitive overhead and maintenance while restoring synchronous data consistency.</li>
 					</ul>
 					<div class='separator'></div>
 				</div>
@@ -404,12 +424,11 @@ blockquote.reference {
 					<div class="blockSubheader"><a href='https://medallion.co'>https://medallion.co</a><span class="location">San Francisco, CA</span>
 					</div>
 					<div class="summary">
-						<p>Developed performant, automation-centric product initiatives as a full-stack engineer utilizing Django, React, and GraphQL at a fast moving health-tech startup.</p>
+						<p>Built automation and onboarding features across the stack at a fast-moving health-tech startup using Django, React, and GraphQL.</p>
 					</div>
 					<ul class='highlights'>
-						<li>Pioneered GraphQL integration, migrating REST endpoints and cultivating an active community to improve dev velocity.</li>
+						<li>Introduced GraphQL by building core abstractions and migrating REST endpoints, then drove adoption through pairing and internal knowledge sharing.</li>
 						<li>Built a high-throughput provider import pipeline using Celery and Customer.io, decreasing turnaround times by 30%.</li>
-						<li>Integrated real-time verifications using Celerybeat/Pusher, ensuring compliance while streamlining operations.</li>
 					</ul>
 					<div class='separator'></div>
 				</div>
@@ -426,11 +445,10 @@ blockquote.reference {
 					<div class="blockSubheader"><a href='https://americanexpress.com'>https://americanexpress.com</a><span class="location">New York, NY</span>
 					</div>
 					<div class="summary">
-						<p>Developed site/infrastructure related features and enhancements as a full stack engineer on Amex&#x27;s GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.</p>
+						<p>Built site and infrastructure features on Amex&#x27;s GCS Commercial team using React, Redux, and GraphQL.</p>
 					</div>
 					<ul class='highlights'>
 						<li>Executed A/B tests, including a mobile carousel enhancement projecting $150M in annual incremental revenue.</li>
-						<li>Spearheaded site-wide accessibility improvements by cataloging violations and reducing outstanding issues by 95%.</li>
 						<li>Built an internal Chrome extension to automate auth syncing, improving developer workflow times by 90%.</li>
 					</ul>
 					<div class='separator'></div>
@@ -448,7 +466,7 @@ blockquote.reference {
 					<div class="blockSubheader"><a href='https://heatwav.co'>https://heatwav.co</a><span class="location">New York, NY</span>
 					</div>
 					<div class="summary">
-						<p>Led technical development of a location-based music &amp; artist discovery platform that placed in the quarter finals at NYU InnoVention, and semi finals at RU Innovators.</p>
+						<p>Led technical development of a location-based music &amp; artist discovery platform that placed in the quarterfinals at NYU InnoVention, and semifinals at RU Innovators.</p>
 					</div>
 					<ul class='highlights'>
 						<li>Built and deployed a location-based mobile app from scratch, managing the full lifecycle from Figma prototyping to Heroku/Testflight deployment.</li>
@@ -489,37 +507,37 @@ blockquote.reference {
 				<div class='skillBlock'>
 					<span class='title'>Languages:</span>
 					<span class="smallFont">TypeScript</span>, 
-					<span class="smallFont">JavaScript</span>, 
 					<span class="smallFont">Python</span>, 
+					<span class="smallFont">JavaScript</span>, 
 					<span class="smallFont">SQL</span>, 
 					<span class="smallFont">Java</span>, 
-					<span class="smallFont">C</span>, 
-					<span class="smallFont">Dart</span>, 
 					<span class="smallFont">Shell</span>, 
 					<span class="smallFont">HTML</span>, 
 					<span class="smallFont">CSS</span>
 				</div>
 				<div class='skillBlock'>
 					<span class='title'>Frameworks/Tools:</span>
+					<span class="smallFont">React</span>, 
+					<span class="smallFont">Next.js</span>, 
 					<span class="smallFont">Hono</span>, 
+					<span class="smallFont">Django</span>, 
+					<span class="smallFont">Express</span>, 
 					<span class="smallFont">Drizzle ORM</span>, 
 					<span class="smallFont">Arktype</span>, 
-					<span class="smallFont">React</span>, 
-					<span class="smallFont">Express</span>, 
-					<span class="smallFont">Next.js</span>, 
-					<span class="smallFont">Django</span>, 
 					<span class="smallFont">Flutter</span>, 
-					<span class="smallFont">Figma</span>
+					<span class="smallFont">Claude Agent SDK</span>, 
+					<span class="smallFont">Braintrust</span>
 				</div>
 				<div class='skillBlock'>
 					<span class='title'>Technologies:</span>
-					<span class="smallFont">GraphQL</span>, 
 					<span class="smallFont">PostgreSQL</span>, 
-					<span class="smallFont">MongoDB</span>, 
+					<span class="smallFont">GraphQL</span>, 
 					<span class="smallFont">Docker</span>, 
 					<span class="smallFont">AWS</span>, 
 					<span class="smallFont">GCP</span>, 
+					<span class="smallFont">BigQuery</span>, 
 					<span class="smallFont">Terraform</span>, 
+					<span class="smallFont">MongoDB</span>, 
 					<span class="smallFont">Redis</span>
 				</div>
 			</div>

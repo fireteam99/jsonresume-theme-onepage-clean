@@ -268,7 +268,7 @@ blockquote.reference {
   }
   body {
     background: #ffffff;
-    font-size: 10pt;
+    font-size: 9.5pt;
     margin: .5in .9in;
   }
   #resume {
@@ -288,22 +288,22 @@ blockquote.reference {
     font-size: 20pt;
   }
   .smallFont {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .sectionName {
-    font-size: 13.5pt;
+    font-size: 13pt;
   }
   .sectionLine {
     margin: 7px 0;
   }
   .sectionContent li {
-    font-size: 8pt;
+    font-size: 7.5pt;
   }
   .sectionContent .date, .location, .score, .position, .roles {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .sectionContent .title {
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight: bold;
   }
   .sectionContent ul {
@@ -313,9 +313,9 @@ blockquote.reference {
     height: 7px;
   }
   .sectionContent .description {
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .summary {
-    font-size: 8.5pt;
+    font-size: 8pt;
   }
 }

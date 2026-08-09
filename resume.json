@@ -19,18 +19,30 @@
   },
   "work": [
     {
+      "name": "Comulate",
+      "position": "Senior Software Engineer",
+      "location": "San Francisco, CA",
+      "url": "https://www.comulate.com/",
+      "startDate": "2026-04",
+      "summary": "Developing an autonomous insurance servicing agent alongside ML engineers and an insurance SME, in close partnership with a design-partner brokerage.",
+      "highlights": [
+        "Architected a unified pipeline for production runs and offline evals, combining sandboxed execution (E2B), webhook-triggered orchestration with dedup/gating, and context assembly over a ~1M-document BigQuery corpus.",
+        "Improved agent eval accuracy by ~60% through prompt engineering, harness iteration, and custom tooling to trace agent reasoning, diagnose context gaps, and match workstreams across threads.",
+        "Shipped an AI-native email client with source-linked agent summaries, suggested replies, and a diff viewer for auditing agent edits."
+      ]
+    },
+    {
       "name": "Overjet",
       "position": "Senior Software Engineer",
       "location": "San Francisco, CA",
       "url": "https://overjet.ai",
       "startDate": "2024-08",
-      "summary": "Core Product Engineer and Technical Lead for a 6-engineer Provider Network Management (PNM) squad, driving the end-to-end modernization of both frontend and backend stacks while delivering critical credentialing and payer enrollment workflows.",
+      "endDate": "2026-04",
+      "summary": "Led a 6-engineer squad modernizing frontend and backend stacks for a Provider Network Management platform, delivering credentialing and payer enrollment workflows.",
       "highlights": [
-        "Spearheaded the migration to a 'Provider-first' architecture, centralizing data ownership to eliminate sync complexity and unblocking the launch for 3 major payers.",
-        "Secured commercial contract with large payer by shipping a production-ready Public API in two weeks, replacing fragile Express routes with a type-safe Hono/Arktype architecture.",
-        "Migrated test infrastructure from serial Dockerized Postgres to parallelized Pglite, reducing CI runtime by 60% and cutting local execution from several minutes to sub-minute.",
-        "Modernized the frontend by introducing GraphQL for E2E type safety while refactoring tightly-coupled legacy components into a modular, hook-based architecture.",
-        "Consolidated fragmented polyglot services into a unified TypeScript monolith, drastically reducing cognitive overhead and maintenance while restoring synchronous data consistency."
+        "Spearheaded a data model re-architecture to centralize ownership across providers, practices, and payers, eliminating sync complexity and unblocking 3 major payer launches.",
+        "Secured commercial contract with large payer by shipping a production-ready Public API in two weeks, replacing legacy Express routes with a type-safe Hono/Arktype architecture.",
+        "Migrated test infrastructure from serial Dockerized Postgres to parallelized Pglite, reducing CI runtime by 60% and cutting local execution from several minutes to sub-minute."
       ]
     },
     {
@@ -40,11 +52,10 @@
       "url": "https://medallion.co",
       "startDate": "2022-05",
       "endDate": "2024-08",
-      "summary": "Developed performant, automation-centric product initiatives as a full-stack engineer utilizing Django, React, and GraphQL at a fast moving health-tech startup.",
+      "summary": "Built automation and onboarding features across the stack at a fast-moving health-tech startup using Django, React, and GraphQL.",
       "highlights": [
-        "Pioneered GraphQL integration, migrating REST endpoints and cultivating an active community to improve dev velocity.",
-        "Built a high-throughput provider import pipeline using Celery and Customer.io, decreasing turnaround times by 30%.",
-        "Integrated real-time verifications using Celerybeat/Pusher, ensuring compliance while streamlining operations."
+        "Introduced GraphQL by building core abstractions and migrating REST endpoints, then drove adoption through pairing and internal knowledge sharing.",
+        "Built a high-throughput provider import pipeline using Celery and Customer.io, decreasing turnaround times by 30%."
       ]
     },
     {
@@ -54,10 +65,9 @@
       "url": "https://americanexpress.com",
       "startDate": "2021-01",
       "endDate": "2022-05",
-      "summary": "Developed site/infrastructure related features and enhancements as a full stack engineer on Amex's GCS Commercial team using React, Redux, and GraphQL - making a combined impact of several hundred million dollars annually.",
+      "summary": "Built site and infrastructure features on Amex's GCS Commercial team using React, Redux, and GraphQL.",
       "highlights": [
         "Executed A/B tests, including a mobile carousel enhancement projecting $150M in annual incremental revenue.",
-        "Spearheaded site-wide accessibility improvements by cataloging violations and reducing outstanding issues by 95%.",
         "Built an internal Chrome extension to automate auth syncing, improving developer workflow times by 90%."
       ]
     },
@@ -68,7 +78,7 @@
       "url": "https://heatwav.co",
       "startDate": "2018-08",
       "endDate": "2022-09",
-      "summary": "Led technical development of a location-based music & artist discovery platform that placed in the quarter finals at NYU InnoVention, and semi finals at RU Innovators.",
+      "summary": "Led technical development of a location-based music & artist discovery platform that placed in the quarterfinals at NYU InnoVention, and semifinals at RU Innovators.",
       "highlights": [
         "Built and deployed a location-based mobile app from scratch, managing the full lifecycle from Figma prototyping to Heroku/Testflight deployment."
       ]
@@ -95,12 +105,10 @@
       "name": "Languages",
       "keywords": [
         "TypeScript",
-        "JavaScript",
         "Python",
+        "JavaScript",
         "SQL",
         "Java",
-        "C",
-        "Dart",
         "Shell",
         "HTML",
         "CSS"
@@ -109,27 +117,29 @@
     {
       "name": "Frameworks/Tools",
       "keywords": [
+        "React",
+        "Next.js",
         "Hono",
+        "Django",
+        "Express",
         "Drizzle ORM",
         "Arktype",
-        "React",
-        "Express",
-        "Next.js",
-        "Django",
         "Flutter",
-        "Figma"
+        "Claude Agent SDK",
+        "Braintrust"
       ]
     },
     {
       "name": "Technologies",
       "keywords": [
-        "GraphQL",
         "PostgreSQL",
-        "MongoDB",
+        "GraphQL",
         "Docker",
         "AWS",
         "GCP",
+        "BigQuery",
         "Terraform",
+        "MongoDB",
         "Redis"
       ]
     }
